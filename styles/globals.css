@@ -2,7 +2,35 @@
 @tailwind components;
 @tailwind utilities;
 
-:root {
+*, html{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.animate-fadeIn {
+  animation: fadeIn 0.5s ease-out forwards;
+}
+/* .menu-item:hover .submenu {
+  display: block;
+}
+
+.submenu {
+  display: none;
+} */
+
+/* :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
   --background-end-rgb: 255, 255, 255;
@@ -30,4 +58,4 @@ body {
   .text-balance {
     text-wrap: balance;
   }
-}
+} */
