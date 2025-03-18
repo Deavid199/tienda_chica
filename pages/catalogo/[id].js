@@ -5,7 +5,7 @@ import { usePorSlugQuery } from "@/features/apis/apiProductos";
 import Link from "next/link";
 import Image from "next/image";
 import Inicio from "@/layouts/inicio";
-export const runtime = "edge";
+
 export default function Catalogo() {
   const router = useRouter();
   const { id } = router.query;

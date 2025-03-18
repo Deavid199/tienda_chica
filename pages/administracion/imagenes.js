@@ -6,7 +6,7 @@ import {
 import Image from "next/image";
 import Admin from "@/layouts/admin";
 import ModalImagen from "@/components/modalImagen";
-export const runtime = "edge";
+
 export default function Imagenes() {
   const [cargando, setCargando] = useState(false);
   const [openModal, setOpenModal] = useState(false);

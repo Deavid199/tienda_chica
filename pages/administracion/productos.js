@@ -5,7 +5,7 @@ import Image from "next/image";
 import Admin from "@/layouts/admin";
 import ModalVerProducto from "@/components/modalVerProducto";
 import ModalProducto from "@/components/modalProducto";
-export const runtime = "edge";
+
 export default function Productos() {
 
   const [openModal, setOpenModal] = useState(false);

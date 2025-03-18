@@ -4,8 +4,6 @@ import UltimosProductos from "@/components/ultimosProductos";
 import useAuth from "@/hook/useAuth";
 import Inicio from "@/layouts/inicio";
 
-export const runtime = "edge";
-
 export default function Home() {
 
   const { auth, cargando } = useAuth();

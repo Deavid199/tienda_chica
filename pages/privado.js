@@ -6,8 +6,6 @@ import styles from "@/styles/privado.module.css";
 import useAuth from "@/hook/useAuth";
 import Inicio from "@/layouts/inicio";
 
-export const runtime = "edge";
-
 export default function Privado() {
   const [isRegisterActive, setIsRegisterActive] = useState(false);
 

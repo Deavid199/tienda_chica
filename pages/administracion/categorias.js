@@ -18,7 +18,7 @@ const columns = [
     lookup: { 1: "Damas", 2: "Caballeros" },
   },
 ];
-export const runtime = "edge";
+
 export default function Categorias() {
   const [openModal, setOpenModal] = useState(false);
 

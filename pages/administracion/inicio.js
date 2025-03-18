@@ -1,6 +1,6 @@
 import Admin from "@/layouts/admin";
 import React from "react";
-export const runtime = "edge";
+
 export default function Inicio() {
   return (
     <div className="h-screen flex">

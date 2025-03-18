@@ -3,7 +3,7 @@ import { useRouter } from "next/router";
 import Inicio from "@/layouts/inicio";
 import Image from "next/image";
 import styles from "../../styles/index.module.css";
-export const runtime = "edge";
+
 export default function Producto() {
   const router = useRouter();
   const { producto: productoQuery } = router.query;
