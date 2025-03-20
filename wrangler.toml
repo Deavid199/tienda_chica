@@ -1,10 +1,12 @@
 name = "tienda-chica"
 compatibility_date = "2024-03-15"
-compatibility_flags = ["nodejs_compat"]  # ← Habilita compatibilidad con Node.js
+compatibility_flags = ["nodejs_compat"]
 
 [vars]
 API_URL = "https://tu-api.com"
-OTRA_VARIABLE = "valor"
 
 [build]
 command = "npm run pages:build"
+
+[site]
+bucket = ".vercel/output/static"
