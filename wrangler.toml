@@ -9,6 +9,6 @@ API_URL = "https://tu-api.com"
 command = "npm run pages:build"
 
 [site]
-bucket = ".vercel/output/static"
+bucket = ".vercel/output"
 
 main = ".vercel/output/static/_worker.js/index.js"
