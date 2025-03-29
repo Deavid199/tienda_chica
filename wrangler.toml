@@ -1,4 +1,4 @@
-name = "tienda-chica"
+name = "tienda_chica"
 compatibility_date = "2024-03-15"
 compatibility_flags = ["nodejs_compat"]
 
@@ -8,9 +8,3 @@ OTRA_VARIABLE = "valor"
 
 [build]
 command = "npm run pages:build"
-
-
-
-npx wrangler pages deploy .vercel/output/static
-
-/.vercel/output/_worker.js
