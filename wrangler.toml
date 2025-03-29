@@ -10,3 +10,5 @@ command = "npm run pages:build"
 
 [site]
 bucket = ".vercel/output/static"
+
+main = ".vercel/output/static/_worker.js/index.js"
