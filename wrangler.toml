@@ -7,4 +7,4 @@ API_URL = "https://tu-api.com"
 OTRA_VARIABLE = "valor"
 
 [build]
-command = "npm run pages:build"
+command = "npm run build"
