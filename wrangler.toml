@@ -5,5 +5,3 @@ compatibility_flags = ["nodejs_compat"]
 API_URL = "https://tu-api.com"
 OTRA_VARIABLE = "valor"
 
-[build]
-command = "npm run build"

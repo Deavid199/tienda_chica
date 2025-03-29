@@ -7,7 +7,7 @@
     "pages:build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build": "npx @cloudflare/next-on-pages"
+    "build": "next build && npx @cloudflare/next-on-pages --output-dir .vercel/output"
   },
   "dependencies": {
     "@material-table/core": "^6.4.4",
