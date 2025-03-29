@@ -8,3 +8,9 @@ OTRA_VARIABLE = "valor"
 
 [build]
 command = "npm run pages:build"
+
+
+
+npx wrangler pages deploy .vercel/output/static
+
+/.vercel/output/_worker.js
