@@ -4,7 +4,7 @@ export const apiProductos = createApi({
   reducerPath: "productos",
 
   baseQuery: fetchBaseQuery({
-    baseUrl: process.env.API_URL,
+    baseUrl: process.env.NEXT_PUBLIC_API_URL,
     prepareHeaders: (headers) => {
       const token = localStorage.getItem("token");
       if (token) {

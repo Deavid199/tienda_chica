@@ -21,7 +21,7 @@ export default function Privado() {
 
     const userData = { usuario, password };
     try {
-      const response = await fetch(`${process.env.API_URL}/api/register`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/register`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',
@@ -69,7 +69,7 @@ export default function Privado() {
 
     const userData = { usuario, password };
     try {
-      const response = await fetch(`${process.env.API_URL}/api/login`, {
+      const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/login`, {
         method: 'POST',
         headers: {
           'Content-Type': 'application/json',

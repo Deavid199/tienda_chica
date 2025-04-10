@@ -86,7 +86,7 @@ export default function ModalImagen({ open, onClose, onImageUpload }) {
       // Enviar URLs y public_ids al backend para almacenar en la base de datos
       const token = localStorage.getItem("token");
       const saveResponse = await fetch(
-        `${process.env.API_URL}/api/upload-image`,
+        `${process.env.NEXT_PUBLIC_API_URL}/api/upload-image`,
         {
           method: "POST",
           headers: {

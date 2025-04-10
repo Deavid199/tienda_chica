@@ -23,7 +23,7 @@ const AuthProvider = ({children}) => {
             }
             try {
                 setCargando(true);
-                const response = await fetch(`${process.env.API_URL}/api/user-perfil`, config);
+                const response = await fetch(`${process.env.NEXT_PUBLIC_API_URL}/api/user-perfil`, config);
                 if (!response.ok) throw new Error("Error en la autenticación");
 
                 const data = await response.json();

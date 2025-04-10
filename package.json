@@ -4,14 +4,16 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "pages:build": "next build",
     "start": "next start",
     "lint": "next lint",
-    "build": "next build && npx @cloudflare/next-on-pages --output-dir .vercel/output"
+    "preview": "opennextjs-cloudflare preview && wrangler dev",
+    "deploy": "opennextjs-cloudflare deploy && wrangler deploy",
+    "cf-typegen": "wrangler types --env-interface CloudflareEnv cloudflare-env.d.ts"
   },
   "dependencies": {
     "@material-table/core": "^6.4.4",
     "@reduxjs/toolkit": "^2.2.5",
+    "axios": "^1.8.4",
     "next": "^14.2.25",
     "react": "^18",
     "react-dom": "^18",
@@ -22,7 +24,7 @@
     "swiper": "^11.1.15"
   },
   "devDependencies": {
-    "@cloudflare/next-on-pages": "^1.13.10",
+    "@opennextjs/cloudflare": "^1.0.0-beta.0",
     "eslint": "^8",
     "eslint-config-next": "14.2.3",
     "postcss": "^8",
